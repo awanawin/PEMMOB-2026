@@ -38,12 +38,11 @@ class ProfilePage extends StatelessWidget {
               ),
               const SizedBox(width: 16),
               //Expanded(
-                //child:
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text(
-                      'Gunawan Nastiar Mahasiswa Teknik Informatika Uhuy',
+                      'Gunawan Nastiar Mahasiswa Teknik Informatika Esa Unggul',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

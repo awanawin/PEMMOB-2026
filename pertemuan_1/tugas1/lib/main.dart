@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: const Text(
-            'Kartu Perkenalan',
+            'Kartu `Perkenalan',
             style: TextStyle(
               color: Colors.white,
             ),
