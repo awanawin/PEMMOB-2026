@@ -1,8 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="pertemuan4"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!-- internet permisiion contoh -->
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
