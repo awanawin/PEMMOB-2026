@@ -13,7 +13,17 @@ import 'package:pertemuan6/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    //await tester.pumpWidget(const MyApp());
+    // Membuat controller tema untuk kebutuhan pengujian.
+    final themeController = AppThemeController();
+
+// Memuat pengaturan tema sebelum aplikasi diuji.
+    await themeController.load();
+
+// Menjalankan aplikasi dengan controller tema.
+    await tester.pumpWidget(
+      MyApp(themeController: themeController),
+    );
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
